@@ -66,11 +66,11 @@ userQueue.process(async (job, done) => {
     const mailContent = [
       '<div>',
       '<h3>Hello {{user.name}},</h3>',
-      'Welcome to <a href="https://github.com/Doroooh/alx-files_manager">',
+      'Welcome to <a href="a href="https://github.com/Doroooh/alx-files_manager">',
       'ALX-Files_Manager</a>, ',
       'a simple file management API built with Node.js by ',
-      '<a href="https://github.com/Doroooh">Ytherah</a>. ',
-      'An ideal file management platform.',
+      '<a href="https://github.com/Doroooh">Waithira Kamau</a>. ',
+      'An ideal file management platform',
       '</div>',
     ].join('');
     Mailer.sendMail(Mailer.buildMessage(user.email, mailSubject, mailContent));
